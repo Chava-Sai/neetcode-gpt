@@ -8,4 +8,4 @@ class Solution:
         return np.round(y_pred,5)
 
     def get_error(self, model_prediction: NDArray[np.float64], ground_truth: NDArray[np.float64]) -> float:
-        return np.round(np.mean(np.pow((ground_truth - model_prediction), 2)), 5)
+        return np.round(np.mean(np.power((model_prediction - ground_truth),2)),5)
